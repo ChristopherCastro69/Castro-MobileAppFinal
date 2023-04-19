@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C6FB7A"
+    tools:context=".sendSMS"
+    tools:layout_editor_absoluteX="6dp"
+    tools:layout_editor_absoluteY="154dp">
+
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="162dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="189dp"
+        android:text="Clear"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSend" />
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="165dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="364dp"
+        android:layout_marginBottom="41dp"
+        android:text="Send message"
+        app:layout_constraintBottom_toTopOf="@+id/btnClear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtPhone"
+        android:layout_width="221dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="52dp"
+        android:ems="10"
+        android:hint="Enter phone number"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/txtMessage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtMessage"
+        android:layout_width="222dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="461dp"
+        android:ems="10"
+        android:hint="Enter message here"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPhone" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
